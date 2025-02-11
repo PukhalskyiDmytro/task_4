@@ -4,4 +4,5 @@ def find_factorial(n):
         result *= i
     return result
 
-print(find_factorial(5))
+if __name__ == "__main__":
+    print(find_factorial(5))
