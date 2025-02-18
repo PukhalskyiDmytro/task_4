@@ -25,7 +25,9 @@ def gcd(a, b):
         a,b = b, a%b
     return a
 
-if __name__ == "__main__":
-    print(find_factorial(5))
-
-
+def euler_phi(n):
+    res = 0
+    for i in range(1, n):
+        if gcd(i, n) == 1:
+            res += 1
+    return res - 1
